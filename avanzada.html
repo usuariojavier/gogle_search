@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced</title>
+  <link rel="stylesheet" href="avanzada.css">
+</head>
+<body>
+
+  <header class="header">
+    <ul class="header__list1">
+      <img src="/media/gooooogle.png" alt="logo google" class="logo_google">
+    </ul>
+
+    <ul class="header__list">
+      <li class="header__list-item"><a href="/imagenes.html" class="header__link">Imágenes</a></li>
+      <li class="header__list-item"><a href="/index.html" class="header__link">Google</a></li>
+      <li class="header__list-item"><a href="#" class="header__link apps-button"><img src="/media/dots_nine_icon_172502.png" alt="Aplicaciones de Google"></a></li>
+    </ul>
+  </header>
+
+  <main class="main">
+    <div class="letras">
+      <h2>Busqueda avanzada</h2>
+      <br><br><hr>
+
+      <div class="container">
+        <div class="column1">
+          <div class="enunciado">
+            <label for="allWords">Todas estas palabras:</label>
+          </div>
+          <div class="enunciado">
+            <label for="exactPhrase">Esta palabra o frase exactas:</label>
+          </div>
+          <div class="enunciado">
+            <label for="anyWords">Cualquiera de estas palabras:</label>
+          </div>
+          <div class="enunciado">
+            <label for="excludeWords">Ninguna de estas palabras:</label>
+          </div>
+        </div>
+
+        <div class="column2">
+          <div class="casilla">
+            <input type="text" name="all_words" id="allWords" placeholder="Palabras importantes">
+          </div>
+          <div class="casilla">
+            <input type="text" name="exact_phrase" id="exactPhrase" placeholder="Palabras exactas entre comillas">
+          </div>
+          <div class="casilla">
+            <input type="text" name="any_words" id="anyWords" placeholder="Escribe OR entre todas las palabras que quieras">
+          </div>
+          <div class="casilla">
+            <input type="text" name="exclude_words" id="excludeWords" placeholder="Ninguna de estas palabras ( añade - delante)">
+          </div>
+          <div class="boton_azul">
+            <button type="button" class="boton_avanzada" onclick="submitSearch()">Advanced search</button>
+          </div>
+        </div>
+
+        <div class="column">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="avanzada.js"></script>
+
+  <footer class="footer">
+    </footer>
+</body>
+</html>
